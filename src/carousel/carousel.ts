@@ -103,7 +103,7 @@ export class NgbSlide {
 		</div>
 		<div class="carousel-inner">
 			@for (slide of slides; track slide; let i = $index; let c = $count) {
-				<div class="carousel-item" [id]="'slide-' + slide.id" role="tabpanel">
+				<div class="carousel-item" [id]="'slide-' + slide.id" role="group">
 					<span
 						class="visually-hidden"
 						i18n="Currently selected slide number read by screen reader@@ngb.carousel.slide-number"
